@@ -101,7 +101,8 @@ export class DoublyLinkedList {
         this.removeNodeBindings(node);
     }
 
-// O(n) time | O(1) space
+    // O(n) time | O(1) space
+    // Search function. Searches list to see if Node exists.
     containsNodeWithValue(value: number) {
         let node = this.head;
         while (node !== null && node.value !== value) node = node.next;
